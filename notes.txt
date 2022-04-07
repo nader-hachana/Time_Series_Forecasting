@@ -1,0 +1,17 @@
+ARIMA modeling and forecasting:
+  +the plots we will look at:
+    -Autocorrelation function (ACF) plot
+    -Partial Autocorrelation function (PACF) plot:
+    -helps us determine number of AutoRegressive(AR) terms & Moving Average(MA) terms.
+    -can also be used to help see seasonality or periodic trends.	
+Rq:
+  -AutoRegressive: forecast the next timestamp's value by regressing over previous values.
+  -Moving average: forecast the next timestamp's value by averaging over the previous values.
+  -ARIMA: AutoRegressive Integrated Moving Average, it's a class of model that captures a suite of different standard temporel structures in time series data, useful for non-stationary data, allows us to difference the data, also includes a seasonal differencing parameter for seasonal non-stationary data.
+  -ACF and PACF plot includes a 95% confidence interval band.
+  -If we see a significant spike at tag X in the ACF, that helps us determine the number of moving average terms.
+  -If we see a significant spike at tag X in the PACF, that helps us determine the number of autoregressive term.
+
+==========================================================================
+- Evaluating forecast/predictions: by looking at "Actual versus predicted" and "Mean Absolute Error".
+- How to improve the model
